@@ -7,7 +7,7 @@ import pandas as pd
 
 # Importing the dataset
 dataset = pd.read_csv('Salary_Data.csv')
-x = dataset.iloc[:,0].values
+x = dataset.iloc[:,:-1].values
 y = dataset.iloc[:,1].values
 
 # Splitting the dataset into the Training set and Test set
