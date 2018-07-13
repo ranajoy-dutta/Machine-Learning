@@ -18,3 +18,15 @@ X_train, X_test, y_train, y_test = train_test_split(x, y, test_size = 1/3, rando
 from sklearn.linear_model import LinearRegression
 regressor = LinearRegression()
 regressor.fit(X_train,y_train)
+
+# Predicting the results on test set
+y_pred = regressor.predict(X_test)
+
+# visualising the results of training set in matplot(graph)
+plt.scatter(X_train, y_train, color = "red")
+plt.plot(X_train, regressor.predict(X_train), color="blue")
+plt.plot(X_train, y_train, color="yellow")
+xlabel = "experience"
+ylabel = "Salary"
+plt.title="Salary vs experience"
+plt.show()
