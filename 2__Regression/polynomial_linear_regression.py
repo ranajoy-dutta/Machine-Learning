@@ -11,3 +11,7 @@ import matplotlib as plt
 dataset = pd.read_csv("Position_Salaries.csv")
 x = dataset.iloc[:, 1:2]
 y = dataset.iloc[:, 2]
+
+from sklearn.linear_model import LinearRegression
+linearRegressor = LinearRegression()
+linearRegressor.fit(x, y)
