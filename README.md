@@ -1,2 +1,2 @@
 # Machine-Learning
-Started with Machine Learning. From beginner to pro. 
+Started with Machine Learning using Python.
